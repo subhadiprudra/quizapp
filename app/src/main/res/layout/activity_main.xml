@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activitys.QuestionsActivity"
+    android:background="@color/background">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/circle_view"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/ic_baseline_close_24"
+                android:padding="10dp"
+                android:id="@+id/close"/>
+
+            <com.owl93.dpb.CircularProgressView
+                android:id="@+id/progress_view"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_margin="20dp"
+                app:direction="cw"
+                app:gradientStartColor="#D85D5D"
+                app:gradientCenterColor="@color/purple"
+                app:gradientEndColor="@color/blue"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:progress="100"
+                app:startingAngle="0"
+                app:trackColor="#333333"
+                app:strokeGradientSize="stroke_only"
+                app:strokeGradientStyle="linear"
+                app:strokeGradient_linearAngle="0"
+                app:strokeWidth="8dp"
+                app:textEnabled="true"
+                app:textFormat="progress"
+                app:textColor="@color/white"
+                app:textGradientSize="text_only"
+                app:text=""
+                app:textGradientStyle="linear"
+                app:textGradient_linearAngle="45"
+                app:textSize="14dp"
+                android:layout_centerInParent="true"
+                />
+
+            <LinearLayout
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/points_border"
+                android:gravity="center"
+                >
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_baseline_favorite_24"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:layout_marginLeft="3dp"
+                    android:textColor="#95ADF4"
+                    android:id="@+id/points"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingHorizontal="30dp"
+            android:layout_marginTop="10dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="bottom">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:text="Question 1"
+                    android:textColor="#9995ADF4"
+                    android:textStyle="bold"
+                    android:id="@+id/index"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17dp"
+                    android:text="/10"
+                    android:textColor="#9995ADF4"
+                    android:id="@+id/total_question"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:id="@+id/question"
+                android:textColor="@color/white"/>
+
+
+
+            <TextView
+                android:layout_marginTop="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:id="@+id/ans1"
+                android:gravity="center"
+                android:padding="20dp"
+                android:background="@drawable/border"
+                android:textColor="@color/white"/>
+
+
+            <TextView
+                android:layout_marginTop="14dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:id="@+id/ans2"
+                android:gravity="center"
+                android:padding="20dp"
+                android:background="@drawable/border"
+                android:textColor="@color/white"/>
+
+
+            <TextView
+                android:layout_marginTop="14dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:id="@+id/ans3"
+                android:gravity="center"
+                android:padding="20dp"
+                android:background="@drawable/border"
+                android:textColor="@color/white"/>
+
+
+            <TextView
+                android:layout_marginTop="14dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:id="@+id/ans4"
+                android:gravity="center"
+                android:padding="20dp"
+                android:background="@drawable/border"
+                android:textColor="@color/white"/>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

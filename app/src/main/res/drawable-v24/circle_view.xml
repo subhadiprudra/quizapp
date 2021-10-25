@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+    <size
+        android:width="50dp"
+        android:height="50dp"/>
+
+    <solid
+        android:color="@color/background" >
+    </solid>
+
+    <!-- View border color and width -->
+    <stroke
+        android:width="2dp"
+        android:color="#400C75C5" >
+    </stroke>
+
+</shape>
